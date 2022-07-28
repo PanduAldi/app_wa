@@ -10,7 +10,7 @@ process.setMaxListeners(0);
 const http = require("http");
 const express = require("express");
 const bodyParser = require("body-parser");
-const port = 9000;
+const port = process.env.PORT || 9000;
 const fs = require("fs");
 const qrcode = require("qrcode");
 const pino = require("pino");
